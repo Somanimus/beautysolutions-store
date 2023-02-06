@@ -123,7 +123,7 @@ const Best = ({ productsHit }) => {
                                   </div>
                               );
                           })
-                        : "покачто нету популярных товаров"}
+                        : "Сейчас товаров под данной категорией нет"}
                 </div>
             </div>
             {productsHit.count > productsHit.count ? <LoadMore /> : ""}

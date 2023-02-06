@@ -8,7 +8,7 @@
 :root{
   --st-backround : #fff;
   --dark-background : #274472;
-  --btn-color: #5885af;
+  --btn-color: #50C878;
 }
 body{
   background:  var(--st-backround);;
@@ -39,7 +39,7 @@ a:hover{
 
 .gray_bg {
   padding: 40px 0;
-  background: #c2c2c2;
+  background: #fee1e4;
 }
 .text-center{
   text-align: center;

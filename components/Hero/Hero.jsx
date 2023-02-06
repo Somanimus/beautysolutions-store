@@ -79,6 +79,7 @@ const Hero = () => {
                 </div>
 
                 <div className={styles.hero_right}>
+                    <Image src={'/cosmetics.png'} width={1400} height={700} alt={'hello'} />
                </div>
             </section>
         </div>
