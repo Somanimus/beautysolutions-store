@@ -20,11 +20,11 @@ const Detail = () => {
         dispatch(getProducts(false, true, productsLastCount))
     }, [productsLastCount, dispatch])
     return (
-        <Layout title={productsDetail?.name}>
+        <Layout title={productsDetail?.name} >
             <ProductsDetail productsDetail={productsDetail} />
             <br/>
             <br/>
-            <Best productsHit={productsHit} />
+           <hr/>
         </Layout>
     );
 };

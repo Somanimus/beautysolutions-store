@@ -15,10 +15,9 @@ const Layout = ({ title, children }) => {
                 <meta name="yandex-verification" content="fe62b413368bcce2" />
             </Head>
             <Navbar />
-            <hr />
             <div>{children}</div>
             <Navbar />
-            <hr />
+            <div style={{'height' :'2em'}}></div>
             <Footer />
         </>
     );

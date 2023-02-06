@@ -62,7 +62,7 @@ const Last = ({product}) => {
     return (
         <div className='gray_bg'>
             <div className="container">
-                <h2>Последние поступления</h2>
+                <h2 className='text-center'>Последние поступления</h2>
                 <div className={styles.best_card_wrapper}>
                     {
                         product.results ? product.results.map((item, idx) => {

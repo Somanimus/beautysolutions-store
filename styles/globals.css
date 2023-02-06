@@ -6,7 +6,7 @@
   font-family: "Montserrat", sans-serif;
 }
 :root{
-  --st-backround : #c3e0e5;
+  --st-backround : #fff;
   --dark-background : #274472;
   --btn-color: #5885af;
 }
@@ -30,11 +30,19 @@ a {
   text-decoration: none;
   color: black;
   cursor: pointer;
+  transition: 0.3s ease-out 50ms;
+}
+a:hover{
+  font-size: 1.05em;
+  color: var(--dark-background);
 }
 
 .gray_bg {
   padding: 40px 0;
-  background: #4d86bb;
+  background: #c2c2c2;
+}
+.text-center{
+  text-align: center;
 }
 
 .slick-prev:before,

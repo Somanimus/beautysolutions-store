@@ -21,6 +21,7 @@ const About = () => {
                 <p>
                </p>
             </div>
+               <hr />
         </section>
     );
 };

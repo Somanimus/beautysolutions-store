@@ -110,7 +110,7 @@ const Best = ({ productsHit }) => {
     return (
         <div className="gray_bg">
             <div className="container">
-                <h2>Лучшие товары</h2>
+                <h2 className="text-center">Лучшие товары</h2>
                 <div className={styles.best_card_wrapper}>
                     {productsHit?.results?.length
                         ? productsHit?.results.map((item, idx) => {

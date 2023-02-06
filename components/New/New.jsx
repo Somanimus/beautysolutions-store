@@ -50,7 +50,7 @@ const New = ({ productsNew }) => {
   return (
     <div className="gray_bg">
       <div className="container">
-        <h2>Новинки</h2>
+        <h2 className="text-center">Новинки</h2>
         <div className={styles.new_card_wrapper}>
           {productsNew.results
             ? productsNew.results.map((item, idx) => (
