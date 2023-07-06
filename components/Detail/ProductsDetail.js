@@ -91,10 +91,10 @@ const ProductsDetail = ({ productsDetail }) => {
                                         /\..*/,
                                         ""
                                     )}{" "}
-                                сом
+                                $
                             </span>{" "}
                             {productsDetail.sale && (
-                                <span>{productsDetail.discount_price} сом</span>
+                                <span>{productsDetail.discount_price} $</span>
                             )}
                         </div>
                         <div

@@ -22,7 +22,7 @@ const BestCard = (props) => {
                     Рыбатекст используется дизайнерами, проектировщиками и
                     фронтендерами, когда нужно быстро заполнить макеты...
                 </div>
-                <div className={styles.best_card_price}>15 040 сом</div>
+                <div className={styles.best_card_price}>15 040 $</div>
             </div>
             <div className={styles.best_card_btn}>В корзину</div>
         </div>

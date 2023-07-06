@@ -77,7 +77,7 @@ export const BestCard = ({
                     <div>
                         <div className={styles.count_price} onClick={e => e.stopPropagation()}>
                             <div className={styles.best_card_price}>
-                                {amount} сом
+                                {amount} $
                             </div>
                             {router.asPath === "/cart" ? (
                                 <div className={styles.count}>
