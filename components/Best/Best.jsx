@@ -46,6 +46,7 @@ export const BestCard = ({
         }
     }
 
+
     return (
         <Link href={`/[id]`} as={`/${content.id}`}>
             <a className={styles.card_link}>
@@ -54,7 +55,7 @@ export const BestCard = ({
                         {new_is === true ? <New /> : <Hit />}
                         <div className={styles.image_wrapper}>
                             <Image
-                                src={content.image}
+                                src={content.images == false ? '/placeholder-image.png' : content.images[0].image  }
                                 alt=""
                                 width={208}
                                 height={260}

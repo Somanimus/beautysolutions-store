@@ -13,7 +13,7 @@ export const BestCardCatalog = ({ content }) => {
             <div className={styles.image_wrapper}>
                 <Image
                     loader={() => content.image}
-                    src={content.image}
+                    src={content.images === [] ? content.image[0] : '/placeholder-image.png'}
                     alt=""
                     width={154}
                     height={156}

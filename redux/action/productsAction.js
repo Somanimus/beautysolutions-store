@@ -15,8 +15,9 @@ const getProductsDetailSuccess = (payload) => ({ type: types.GET_PRODUCTS_DETAIL
 export const getProducts = (is_new, hit, countProducts, search) => {
     return async (dispatch) => {
         try {
+//
             const res = await axios.get(
-                `${API_URL}/products?${is_new ? 'is_new=true' : ''}${hit ? 'hit=true' : ''}&${countProducts ? `limit=${countProducts}` : ""}${search ? `&search=${search}` : ""}`)
+                `${API_URL}/product/?${is_new ? 'is_new=true' : ''}${hit ? 'hit=true' : ''}&${countProducts ? `limit=${countProducts}` : ""}${search ? `&search=${search}` : ""}`)
             if (is_new) {
                 dispatch(getProductsNew(res.data))
             }else if(hit) {
@@ -35,7 +36,7 @@ export const getProducts = (is_new, hit, countProducts, search) => {
 
 export const getProductsDetail = (id) => async (dispatch) => {
     try {
-        const res = await axios.get(`${API_URL}/products/${id}`)
+        const res = await axios.get(`${API_URL}/product/${id}`)
         dispatch(getProductsDetailSuccess(res.data))
     } catch (e) {
         console.log(e);
