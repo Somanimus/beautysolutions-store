@@ -32,7 +32,7 @@ const Card = () => {
         dispatch(basketAction());
     }, [dispatch]);
 
-    console.log(products.results.filter((item, idx) => basket.indexOf(item.id) !== -1).map((item) => item.id))
+    // console.log(products.results.filter((item, idx) => basket.indexOf(item.id) !== -1).map((item) => item.id))
              
 
     const formChange =async (e) => {
