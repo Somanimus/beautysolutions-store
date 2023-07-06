@@ -27,6 +27,9 @@ const Footer = () => {
                         <Link href={"/shares"}>
                             <a><li>Акции</li></a>
                         </Link>
+                        <Link href={"/terms"}>
+                            <a><li>Условия использования</li></a>
+                        </Link>
                     </ul>
                 </div>
 

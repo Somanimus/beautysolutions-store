@@ -9,6 +9,10 @@
   margin-top: 24px;
 }
 
+.card_image {
+  max-width: 200px;
+}
+
 .card > p {
   margin-top: 15px;
 }
