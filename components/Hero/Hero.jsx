@@ -25,10 +25,10 @@ const Hero = () => {
             <section className={styles.hero}>
                 <div className={styles.hero_left}>
                     <h1 className={styles.hero_h1}>Товары для красоты</h1>
-                    <p>
+                    {/* <p>
                         C помощью этого онлайн-генератора рыботекста можно
                         пачками плодить как отдельные предложения и заголовки
-                    </p>
+                    </p> */}
                     <div className={styles.input_wrapper}>
                         <label className={styles.hero_input}>
                             <input
