@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Layout from "../../components/Layout/Layout";
 import { BestCard } from "../../components/Best/Best";
 import { useDispatch, useSelector } from "react-redux";
+import { API_URL } from "../../https";
 import { getProducts } from "../../redux/action/productsAction";
 import { basketAction, getLocalStorage } from "../../redux/action/basketAction";
 import styles from "./card.module.css";
@@ -17,25 +19,42 @@ const f = {
 
 const Card = () => {
     const [amount, setAmount] = useState(1)
+    const [email, setemail] = useState('')
+    const [phone_number, setphone]  = useState('')
+    const [username, setusername] = useState('')
+    const [adress, setadress] = useState('')
     const { products } = useSelector((state) => state.products);
     const { basket } = useSelector((state) => state.basket);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(getProducts(false, false, 0));
+        dispatch(getProducts(false, false, 120));
         dispatch(basketAction());
     }, [dispatch]);
 
-    console.log(basket)
+    console.log(products.results.filter((item, idx) => basket.indexOf(item.id) !== -1).map((item) => item.id))
+             
 
-    const formChange = (e) => {
+    const formChange =async (e) => {
         e.preventDefault()
+        console.log('email ' + email)
+        console.log('phone' + phone_number)
+        console.log('adress' + adress)
+        console.log('name ' + username)
+        await axios.post(`${API_URL}/order/`, {
+            full_name: username,
+            email, 
+            addres: adress,
+            phone: phone_number,
+            ordered: true,
+            products: products.results.filter((item, idx) => basket.indexOf(item.id) !== -1).map((item) => `${item.id}`)
+        }).then(res => console.log(res)).catch(err => console.log(err))
     } 
 
     return (
         <Layout title="Корзина">
             <div className={styles.basket + " container"}>
-                {basket.length ? (
+                {basket.length > 0? (
                     products?.results
                         ?.filter((item, idx) => basket.indexOf(item.id) !== -1)
                         .map((item, idx) => {
@@ -57,11 +76,11 @@ const Card = () => {
                     <div>
                         <label>
                             <span>Имя *</span>
-                            <input type="text" required name="full_name" />
+                            <input type="text" value={username}  onChange={ e=> setusername(e.target.value)}required name="full_name" />
                         </label>
                         <label>
                             <span>Email *</span>
-                            <input type="email" required name="email" />
+                            <input value={email} type="email" required name="email"  onChange={e => setemail(e.target.value)}/>
                         </label>
                         <label>
                             <span>Телефон *</span>
@@ -70,11 +89,13 @@ const Card = () => {
                                 required
                                 placeholder="+996-XXX-XXX-XXX"
                                 name="phone"
+                                value={phone_number}
+                                onChange={e=> setphone(e.target.value)}
                             />
                         </label>
                         <label>
                             <span>Адрес *</span>
-                            <input type="text" required name="addres" />
+                            <input type="text" onChange={e=> setadress(e.target.value)} value={adress} required name="addres" />
                         </label>
                     </div>
                     <button type="submit">заказать</button>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./detail.module.css";
 import Slider from "react-slick";
 import Image from "next/image";
@@ -50,94 +50,20 @@ const ProductsDetail = ({ productsDetail }) => {
             <div className={styles.content}>
                 <div className={styles.slider}>
                     <Slider {...settings}>
-                        <div>
-                            {productsDetail.image && (
-                                <Image
-                                    loader={() => productsDetail.image}
-                                    src={productsDetail.image}
-                                    objectFit={"contain"}
-                                    alt=""
-                                    width={600}
-                                    height={600}
-                                    unoptimized
-                                />
-                            )}
-                        </div>
-                        {productsDetail.image2 && (
+
+
                             <div>
-                                {productsDetail.image2 && (
-                                    <Image
-                                        loader={() => productsDetail.image2}
-                                        src={productsDetail.image2}
+                                      <Image
+                                        loader={() => '/placeholder-image.png'}
+                                        src={productsDetail.images? productsDetail.images[0].image: '/placeholder-image.png'}
+                                        placeholder="/placeholder-image.png"
                                         objectFit={"contain"}
                                         alt=""
                                         width={600}
                                         height={600}
                                         unoptimized
                                     />
-                                )}
-                            </div>
-                        )}
-                        {productsDetail.image3 && (
-                            <div>
-                                {productsDetail.image3 && (
-                                    <Image
-                                        loader={() => productsDetail.image3}
-                                        src={productsDetail.image3}
-                                        objectFit={"contain"}
-                                        alt=""
-                                        width={600}
-                                        height={600}
-                                        unoptimized
-                                    />
-                                )}
-                            </div>
-                        )}
-                        {productsDetail.image4 && (
-                            <div>
-                                {productsDetail.image4 && (
-                                    <Image
-                                        loader={() => productsDetail.image4}
-                                        src={productsDetail.image4}
-                                        objectFit={"contain"}
-                                        alt=""
-                                        width={600}
-                                        height={600}
-                                        unoptimized
-                                    />
-                                )}
-                            </div>
-                        )}
-                        {productsDetail.image5 && (
-                            <div>
-                                {productsDetail.image5 && (
-                                    <Image
-                                        loader={() => productsDetail.image5}
-                                        src={productsDetail.image5}
-                                        objectFit={"contain"}
-                                        alt=""
-                                        width={600}
-                                        height={600}
-                                        unoptimized
-                                    />
-                                )}
-                            </div>
-                        )}
-                        {productsDetail.image6 && (
-                            <div>
-                                {productsDetail.image6 && (
-                                    <Image
-                                        loader={() => productsDetail.image6}
-                                        src={productsDetail.image6}
-                                        objectFit={"contain"}
-                                        alt=""
-                                        width={600}
-                                        height={600}
-                                        unoptimized
-                                    />
-                                )}
-                            </div>
-                        )}
+                           </div>
                     </Slider>
                 </div>
                 <div>
@@ -151,10 +77,7 @@ const ProductsDetail = ({ productsDetail }) => {
                         )}
                     </div>
 
-                    <div style={{'marginBottom' : '1.5em'}}><strong>Под котегория:</strong> {productsDetail.subcategory}</div>
-                    <div style={{'marginBottom' : '1.5em'}}><strong>Комплектация:</strong> {productsDetail.prod_set}</div>
-                    <div style={{'marginBottom' : '1.5em'}}><strong>Цвет:</strong> {productsDetail.color}</div>
-                    <div style={{'marginBottom' : '1.5em'}}><strong>Описание:</strong> {productsDetail.description}</div>
+                   <div style={{'marginBottom' : '1.5em'}}><strong>Описание:</strong> {productsDetail.description}</div>
                     <div className={styles.btn_card_price}>
                         <div className={styles.price}>
                             <strong>Цена:</strong>{" "}

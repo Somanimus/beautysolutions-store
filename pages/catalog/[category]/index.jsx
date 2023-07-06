@@ -24,7 +24,7 @@ const Subcategory = () => {
             <div className={styles.content + " container"}>
                 <div>
                     <Image 
-                        loader={() => categoriesDetail.image}
+                        loader={() => categoriesDetail.images.image[0]}
                         src={categoriesDetail?.image ? categoriesDetail?.image : "./kreslo.png"}
                         alt=""
                         width={450}

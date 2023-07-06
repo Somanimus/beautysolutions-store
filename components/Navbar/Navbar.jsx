@@ -13,8 +13,7 @@ const Navbar = () => {
                 <Link href="/">
                     <a>
                         <div className={styles.nav_logo}>
-
-                            <span>Shopping.kg</span>
+                            <span>Beauty Solution</span>
                         </div>
                     </a>
                 </Link>

@@ -25,7 +25,7 @@ const NewCard = ({ newContent }) => {
       </div>
       <div className={styles.new_card_right}>
         <Image
-          src={newContent.image}
+          src={newContent.images == false ? '/placeholder-image.png' : newContent.images[0].image}
           loader={() => newContent.image}
           alt="sofa img"
           width={470}

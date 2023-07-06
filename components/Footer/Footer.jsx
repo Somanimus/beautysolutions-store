@@ -48,9 +48,6 @@ const Footer = () => {
                         }
                     </ul>
                 </div>
-                <div>
-                    <Image src='/map.ng' alt='map' width={480} height={282} />
-                </div>
             </div>
 
             <div className={"container " + styles.footer_bottom}>
@@ -79,6 +76,11 @@ const Footer = () => {
                         width={24}
                         height={24}
                     />
+                </div>
+
+                <div className={styles.copyright}>
+                    {"Общество с Ограниченной Ответственностью (ОсОО) «Бьюти Солюшнс»"}
+                    {"Кыргызская Республика, город Бишкек, ул. Нуркамал Жетикашкаевой 29"}  
                 </div>
             </div>
         </footer>

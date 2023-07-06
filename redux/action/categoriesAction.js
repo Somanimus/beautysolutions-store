@@ -11,7 +11,7 @@ const errorCotegories = (error) => ({ type: types.ERROR_COTEGORIES, error });
 export const getCotegories = () => {
     return async (dispatch) => {
         try {
-            const res = await axios.get(`${API_URL}/categories/`);
+            const res = await axios.get(`${API_URL}/category/`);
             dispatch(getCotegoriesSuccess(res.data));
         } catch (e) {
             dispatch(errorCotegories(e));
@@ -32,7 +32,7 @@ export const getCategoriesDetail = (id) => {
     console.log(id);
     return async (dispatch) => {
         try {
-            const res = await axios.get(`${API_URL}/categories/${id}/`);
+            const res = await axios.get(`${API_URL}/category/${id}/`);
             dispatch(getCategoresDetailSuccess(res.data));
         } catch (e) {
             console.log(e);

@@ -15,7 +15,7 @@ const getSubCategoriesDetailSuccess = (payload) => ({type: types.GET_SUB_CATEGOR
 export const getSubCategories = () => {
     return async (dispatch) => {
         try {
-            const res = await axios.get(`${API_URL}/sub_categories/`);
+            const res = await axios.get(`${API_URL}/subcategory/`);
             dispatch(getSubCotegoriesSuccess(res.data));
         } catch (e) {
             dispatch(errorSubCotegories(e));
@@ -25,7 +25,7 @@ export const getSubCategories = () => {
 
 export const getSubCategoriesDetail = id => async dispatch => {
     try{
-        const res = await axios.get(`${API_URL}/sub_categories/${id}`)
+        const res = await axios.get(`${API_URL}/subcategory/${id}`)
         dispatch(getSubCategoriesDetailSuccess(res.data))
     }catch(e) {
         console.log(e)
