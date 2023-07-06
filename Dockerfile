@@ -33,7 +33,7 @@ USER nextjs
 
 EXPOSE 70
 
-ENV PORT 70
+ENV PORT 80
 
 # Next.js collects completely anonymous telemetry data about general usage.
 # Learn more here: https://nextjs.org/telemetry
