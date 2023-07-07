@@ -5,7 +5,6 @@ import { getShares } from "../../redux/action/sharesAction";
 import { BestCard } from "../../components/Best/Best";
 import Link from "next/link";
 import styles from './delivery.module.css';
-import {countries} from './countiesArray';
 
 const Delivery = () => {
     const { shares } = useSelector(state => state.shares)
@@ -13,6 +12,175 @@ const Delivery = () => {
     useEffect(() => {
         dispatch(getShares())
     }, [dispatch])
+
+    const countries = [
+        {
+            title: 'Afrika',
+            cities: [
+                ' – Congo, the Democratic Republic of the',
+                ' – Egypt',
+                ' – Eritrea',
+                ' – Madagascar',
+                ' – Reunion',
+                ' – Saint Helena, Ascension and Tristan da Cunha',
+                ' – Seychelles',
+                ' – South Africa',
+                ' – South Sudan',
+                ' – Swaziland',
+                ' – Tunisia'
+            ]
+        },
+        {
+            title: 'Asia',
+            cities: [
+                ' – Guam',
+                ' – Hong Kong',
+                ' – Japan',
+                ' – Macao',
+                ' – Malaysia',
+                ' – Maldives',
+                ' – Northern Mariana Islands',
+                ' – Philippines',
+                ' – Singapore',
+                ' – South Korea',
+                ' – Thailand',
+                ' – Timor-Leste'
+            ]
+        },
+        {
+            title: 'Europe',
+            cities: [
+                ' – Aland Islands',
+                ' – Albania',
+                ' – Andorra',
+                ' – Austria',
+                ' – Belgium',
+                ' – Bermuda',
+                ' – Bosnia and Herzegovina',
+                ' – British Indian Ocean Territory',
+                ' – Bulgaria',
+                ' – Cayman Islands',
+                ' – Croatia',
+                ' – Czech Republic',
+                ' – Denmark',
+                ' – Estonia',
+                ' – Faroe Islands',
+                ' – Finland',
+                ' – France',
+                ' – French Guiana',
+                ' – French Polynesia',
+                ' – French Southern Territories',
+                ' – Germany',
+                ' – Greece',
+                ' – Greenland',
+                ' – Guernsey',
+                ' – Holy See',
+                ' – Hungary',
+                ' – Iceland',
+                ' – Ireland',
+                ' – Isle of Man',
+                ' – Italy',
+                ' – Jersey',
+                ' – Liechtenstein',
+                ' – Luxembourg',
+                ' – Macedonia, the former Yugoslav Republic of',
+                ' – Malta',
+                ' – Mayotte',
+                ' – Monaco',
+                ' – Montenegro',
+                ' – Netherlands',
+                ' – Netherlands Antilles',
+                ' – New Caledonia',
+                ' – Norway',
+                ' – Poland',
+                ' – Portugal',
+                ' – Romania',
+                ' – Saint Martin (French part)',
+                ' – San Marino',
+                ' – Serbia',
+                ' – Slovakia',
+                ' – Slovenia',
+                ' – Spain',
+                ' – Svalbard and Jan Mayen',
+                ' – Sweden',
+                ' – Switzerland',
+                ' – United Kingdom of Great Britain and Northern Ireland',
+                ' – Virgin Islands, British'
+            ]
+        },
+        {
+            title: 'Middle East',
+            cities: [
+                ' – Cyprus',
+                ' – Jordan',
+                ' – Turkey',
+                ' – United Arab Emirates'
+            ]
+        },
+        {
+            title: 'North America/Central America',
+            cities: [
+                ' – Canada',
+                ' – Costa Rica',
+                ' – Guadeloupe',
+                ' – Martinique',
+                ' – Mexico',
+                ' – Panama',
+                ' – Puerto Rico',
+                ' – Saint Pierre and Miquelon',
+                ' – United States Minor Outlying Islands',
+                ' – United States of America',
+                ' – Virgin Islands, U.S.'
+            ]
+        },
+        {
+            title: 'Oceania',
+            cities: [
+                ' – Australia',
+                ' – Christmas Island',
+                ' – Cocos (Keeling) Islands',
+                ' – Cook Islands',
+                ' – Fiji',
+                ' – Heard Island and McDonald Islands',
+                ' – Marshall Islands',
+                ' – New Zealand',
+                ' – Norfolk Island',
+                ' – Solomon Islands'
+            ]
+        },
+        {
+            title: 'South America/the Caribbean',
+            cities: [
+                ' – Antigua and Barbuda',
+                ' – Argentina',
+                ' – Aruba',
+                ' – Bahamas',
+                ' – Bolivia, Plurinational State of',
+                ' – Bonaire, Sint Eustatius and Saba',
+                ' – Brazil',
+                ' – Chile',
+                ' – Colombia',
+                ' – Cuba',
+                ' – Curacao',
+                ' – Dominican Republic',
+                ' – Ecuador',
+                ' – Falkland Islands (Malvinas)',
+                ' – Guyana',
+                ' – Haiti',
+                ' – Paraguay',
+                ' – Peru',
+                ' – Saint Barthelemy',
+                ' – Saint Kitts and Nevis',
+                ' – Saint Lucia',
+                ' – Saint Vincent and the Grenadines',
+                ' – Sint Maarten (Dutch part)',
+                ' – Suriname',
+                ' – Turks and Caicos Islands',
+                ' – Uruguay',
+                ' – Venezuela, Bolivarian Republic of'
+            ]
+        }
+    ]
 
     return (
         <Layout>
