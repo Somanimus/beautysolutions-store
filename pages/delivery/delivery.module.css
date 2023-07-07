@@ -1,0 +1,29 @@
+.delivery div {
+    margin: 15px 0;   
+}
+
+.delivery table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.delivery td {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 16px;
+}
+.delivery th {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 16px;
+}
+
+.delivery ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.delivery li {
+    width: 100%;
+    list-style-type: none;
+}
