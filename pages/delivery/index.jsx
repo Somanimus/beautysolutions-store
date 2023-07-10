@@ -189,29 +189,29 @@ const Delivery = () => {
                 <h2>Политика доставки</h2>
                 <div>
                     <div>
-                        <p>General information</p>
+                        <p>Общая информация</p>
                         <p>
-                            All orders are subject to product availability.
-                            If an item is not in stock at the time you place your order, we
-                            will notify you about it. Once your order is approved and paid for,
-                            we will send you an email confirming the shipment of the
-                            products together with tracking sources.
+                            Все заказы выполняются при наличии товара.
+                            Если товара нет в наличии на момент размещения заказа, мы
+                            уведомит вас об этом. После того, как ваш заказ будет одобрен и оплачен,
+                            мы вышлем вам электронное письмо с подтверждением отправки
+                            продукты вместе с отслеживанием источников.
                         </p>
                     </div>
                     <div>
-                        <p>Shipping costs</p>
+                        <p>Стоимость доставки</p>
                         <p>
-                            Shipping costs are based on the weight of your order and the delivery type.
-                            To find out how much your order will cost, simply add the items you would
-                            like to purchase to your cart and proceed to the checkout page. Once at the
-                            checkout screen, shipping charges will be displayed. Please note, customs duties
-                            and taxes may be charged according to the country or state to which the item is shipped.
-                            However, we cannot predict whether they will be applied
-                            and do not include them in the total order cost at the checkout.
+                            Стоимость доставки зависит от веса вашего заказа и типа доставки.
+                            Чтобы узнать, сколько будет стоить ваш заказ, просто добавьте товары, которые вы хотели бы
+                            в корзину и перейдите на страницу оформления заказа. Однажды в
+                            экран оформления заказа, стоимость доставки будет отображаться. Обратите внимание, таможенные пошлины
+                            и налоги могут взиматься в зависимости от страны или штата, в который отправляется товар.
+                            Однако мы не можем предсказать, будут ли они применяться
+                            и не включать их в общую стоимость заказа на кассе.
                         </p>
                     </div>
                     <div>
-                        <p>Below you can find the types of order delivery we provide and their cost:</p>
+                        <p>Ниже вы можете ознакомиться с видами доставки заказов, которые мы осуществляем, и их стоимостью:</p>
                     </div>
 
                     <table>
@@ -233,14 +233,14 @@ const Delivery = () => {
                     </table>
 
                     <div>
-                        <p>*BD stands for “business days” – Monday through Friday, excluding weekends and public holidays.</p>
+                        <p>*BD означает «рабочие дни» — с понедельника по пятницу, кроме выходных и праздничных дней.</p>
                     </div>
                     <div>
-                        <p>International shipping</p>
+                        <p>Международный доставка</p>
                         <p>
-                            We try to reach as many countries all over the world as
-                            possible but there might be some exceptions due to different reasons.
-                            Please check out the list of the countries we do ship to below.
+                            Мы стараемся охватить как можно больше стран мира,
+                            но могут быть некоторые исключения по разным причинам.
+                            Пожалуйста, ознакомьтесь со списком стран, в которые мы осуществляем доставку ниже.
                         </p>
                     </div>
                     {
@@ -255,41 +255,41 @@ const Delivery = () => {
                             </div>)
                     }
                     <div>
-                        <p>Delivery time</p>
+                        <p>Срок поставки</p>
                         <p>
-                            Delivery times are estimates and start from the
-                            date of shipping, rather than the date of order.
-                            Delivery times are to be used as a guide only.
+                            Сроки доставки ориентировочные и начинаются с
+                            дата отгрузки, а не дата заказа.
+                            Сроки доставки должны использоваться только в качестве ориентира.
                         </p>
                     </div>
                     <div>
                         <p>
-                            The date of delivery may vary due to carrier shipping practices, delivery location, method of delivery,
-                            and the items ordered. Products may also be delivered in separate shipments.
-                            Please note that unless there are exceptional circumstances, we make every effort to fulfil
-                            your order within the delivery times stated above. Exceptional circumstances are events that
-                            are outside of our control and that could not be foreseen or guarded against. They include but are not
-                            limited to floods, hurricanes, fire, earthquakes, typhoons, explosions, war, strikes, or acts of
-                            government that may prevent us from fulfilling its obligation.
+                            Дата доставки может варьироваться в зависимости от практики доставки перевозчика, места доставки, способа доставки,
+                            и заказанные товары. Товары также могут поставляться отдельными партиями.
+                            Обратите внимание, что если нет исключительных обстоятельств, мы прилагаем все усилия, чтобы выполнить
+                            Ваш заказ в сроки, указанные выше. Исключительные обстоятельства – это события, которые
+                            находятся вне нашего контроля и не могут быть предвидены или защищены от них. Они включают, но не
+                            ограничивается наводнениями, ураганами, пожарами, землетрясениями, тайфунами, взрывами, войнами, забастовками или актами
+                            правительство, которое может помешать нам выполнить свои обязательства.
                         </p>
                     </div>
                     <div>
-                        <p>Damaged or defective items</p>
+                        <p>Поврежденные или дефектные предметы</p>
                         <p>
-                            We understand that purchasing electronics can be a big investment
-                            and we want to make your decision as easy as possible. Please be
-                            assured that customer satisfaction is our top priority. We will work
-                            diligently to resolve any issues with your order in accordance with the policy set forth below.
+                            Мы понимаем, что покупка электроники может быть большой инвестицией
+                            и мы хотим сделать ваше решение как можно проще. Будьте
+                            уверены, что удовлетворение потребностей клиентов является нашим главным приоритетом. Мы будем работать
+                            усердно решать любые проблемы с вашим заказом в соответствии с политикой, изложенной ниже.
                         </p>
                     </div>
                     <div>
                         <p>
-                            If you are not 100% satisfied with your purchase for any reason, please contact us immediately.
-                            We will replace any damaged or defective item and send it to you again free of charge. If that
-                            is not the case for you, we will issue a refund (including shipping cost) with the same means of
-                            payment as used in your order. Refunds usually take 7 to 14 business days to process and appear
-                            on your bank account. You can also return the item within 14 days of receiving your order.
-                            Please contact our customer support for more details on the product return procedure.
+                            Если вы не на 100% удовлетворены своей покупкой по какой-либо причине, пожалуйста, немедленно свяжитесь с нами.
+                            Мы бесплатно заменим любой поврежденный или дефектный товар и снова отправим его вам. Если это
+                            это не ваш случай, мы вернем деньги (включая стоимость доставки) тем же способом
+                            платеж, используемый в вашем заказе. Возврат средств обычно занимает от 7 до 14 рабочих дней для обработки и появления.
+                            на вашем банковском счете. Вы также можете вернуть товар в течение 14 дней с момента получения заказа.
+                            Пожалуйста, свяжитесь с нашей службой поддержки для получения более подробной информации о процедуре возврата продукта.
                         </p>
                     </div>
                     <hr />
