@@ -25,9 +25,21 @@
 
 .card_wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+}
+
+.card_info {
+  margin: 30px 0;
+}
+
+.card_price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: var(--btn-color);
 }
 
 @media (max-width: 1200px) {

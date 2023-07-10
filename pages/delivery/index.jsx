@@ -5,6 +5,7 @@ import { getShares } from "../../redux/action/sharesAction";
 import { BestCard } from "../../components/Best/Best";
 import Link from "next/link";
 import styles from './delivery.module.css';
+import { useTranslation } from "react-i18next";
 
 const Delivery = () => {
     const { shares } = useSelector(state => state.shares)
@@ -181,6 +182,7 @@ const Delivery = () => {
             ]
         }
     ]
+    const { t } = useTranslation();
 
     return (
         <Layout>

@@ -11,6 +11,12 @@ const Card = () => {
             <div className={styles.card_flex}>
                 <h3>Выгодно</h3>
             </div>
+            <div className={styles.card_info}>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dignissimos obcaecati ratione aspernatur molestiae beatae sint, voluptatibus perferendis exercitationem harum? Culpa at mollitia suscipit quas odio ex, ratione cumque dolorum.</p>
+            </div>
+            <div className={styles.card_price}>
+                <p>800 $</p>
+            </div>
         </div>
     );
 };
@@ -24,6 +30,12 @@ const Card2 = () => {
             />
             <div className={styles.card_flex}>
                 <h3>Выгодно</h3>
+            </div>
+            <div className={styles.card_info}>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dignissimos obcaecati ratione aspernatur molestiae beatae sint, voluptatibus perferendis exercitationem harum? Culpa at mollitia suscipit quas odio ex, ratione cumque dolorum.</p>
+            </div>
+            <div className={styles.card_price}>
+                <p>800 $</p>
             </div>
         </div>
     );
@@ -39,6 +51,12 @@ const Card3 = () => {
             <div className={styles.card_flex}>
                 <h3>Выгодно</h3>
             </div>
+            <div className={styles.card_info}>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dignissimos obcaecati ratione aspernatur molestiae beatae sint, voluptatibus perferendis exercitationem harum? Culpa at mollitia suscipit quas odio ex, ratione cumque dolorum.</p>
+            </div>
+            <div className={styles.card_price}>
+                <p>800 $</p>
+            </div>
         </div>
     );
 };
@@ -52,6 +70,12 @@ const Card4 = () => {
             />
             <div className={styles.card_flex}>
                 <h3>Выгодно</h3>
+            </div>
+            <div className={styles.card_info}>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dignissimos obcaecati ratione aspernatur molestiae beatae sint, voluptatibus perferendis exercitationem harum? Culpa at mollitia suscipit quas odio ex, ratione cumque dolorum.</p>
+            </div>
+            <div className={styles.card_price}>
+                <p>800 $</p>
             </div>
         </div>
     );
