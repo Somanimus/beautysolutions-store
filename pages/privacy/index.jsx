@@ -20,91 +20,91 @@ const Privacy = () => {
                 <div>
                     <div>
                         <p>
-                            We take the privacy of your information seriously and we
-                            ask that you read this Privacy notice carefully as it contains
-                            important information on the use of personal data that you provide
-                            to us. For clarification, personal data constitutes any information
-                            related to an individual that can be used to directly or indirectly
-                            identify the person. It can be a name, an email address, a telephone number,
-                            payment information, etc.
+                            Мы серьезно относимся к конфиденциальности вашей информации, и мы
+                            просим вас внимательно прочитать данное уведомление о конфиденциальности, поскольку оно содержит
+                            важную информацию об использовании персональных данных, которые вы предоставляете
+                            нам. Для уточнения, персональные данные представляют собой любую информацию
+                            связанное с физическим лицом, которое может быть использовано для прямого или косвенного
+                            идентифицирования человека. Это может быть имя, адрес электронной почты, номер телефона,
+                            платежная информация и т.д.
                         </p>
                     </div>
                     <div>
-                        <p>Information we collect and use</p>
-                        <p>We collect and process personal data you provide to us for the following purposes:</p>
-                        <p>– to improve the user experience when using simplytechmall.com;</p>
-                        <p>– to provide services under the agreement between you and us;</p>
-                        <p>– to comply with contractual obligations;</p>
-                        <p>– to confirm your identity;</p>
-                        <p>– to manage payment transactions;</p>
-                        <p>– to ship orders, etc.</p>
+                        <p>Информация, которую мы собираем и используем</p>
+                        <p>Мы собираем и обрабатываем персональные данные, которые вы нам предоставляете, для следующих целей:</p>
+                        <p>– для улучшения пользовательского опыта при использовании Beauty Solution;</p>
+                        <p>— для оказания услуг по договору между вами и нами;</p>
+                        <p>– соблюдать договорные обязательства;</p>
+                        <p>– подтвердить свою личность;</p>
+                        <p>– управлять платежными операциями;</p>
+                        <p>- отгружать заказы и т.д.</p>
                     </div>
                     <div>
                         <p>
-                            To make our site work properly, we may collect information
-                            about the parts of the site that you use and how you use it.
-                            This kind of information is called “cookies”. Cookies are small
-                            text files that a website sends to your web browser
-                            (e.g., Google Chrome, Safari, Firefox) and which are saved on your
-                            device when you visit a site. Cookies are used to make it quicker
-                            and easier for you to shop on a particular site as they collect and
-                            remember your actions and preferences (e.g., language).
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Cookies do not store any of your personal information, we use them
-                            solely to provide you with the best browsing and shopping experience possible.
-                            You can always control or disable cookies by going to Settings in
-                            your browser. Please note, depending on the cookies you decide to
-                            block, some functionalities or areas of simplytechmall.com may not work properly.
-                        </p>
-                    </div>
-                    <div>
-                        <p>Information we share</p>
-                        <p>
-                            We never sell the information our customers provide to us.
-                            However, we may share your information with third-party companies
-                            for order fulfilment. They include payment gateways and payment
-                            processors, companies that provide shipment of ordered goods, etc.
-                            We will also share your information with official authorities if we
-                            are required to do so by the law.
-                        </p>
-                    </div>
-                    <div>
-                        <p>Information security</p>
-                        <p>
-                            We work hard to protect our site and any
-                            information that we hold from unauthorized access or
-                            unauthorized alteration, disclosure or destruction.
-                            In particular:
-                        </p>
-                        <p>
-                            – we review our information collection, storage and
-                            processing practices, including physical security measures,
-                            to guard against unauthorized access to systems.
-                        </p>
-                        <p>
-                            – we restrict access to personal information to contractors, service
-                            providers and agents who need to know that information to process
-                            it for us to provide our services to you.
+                            Чтобы наш сайт работал должным образом, мы можем собирать информацию
+                            о частях сайта, которые вы используете, и о том, как вы его используете.
+                            Такая информация называется «куки». Куки маленькие
+                            текстовые файлы, которые веб-сайт отправляет в ваш веб-браузер
+                            (например, Google Chrome, Safari, Firefox) и которые сохранены на вашем
+                            устройство при посещении сайта. Файлы cookie используются для ускорения
+                            и вам будет проще делать покупки на конкретном сайте, поскольку они собирают и
+                            запоминать свои действия и предпочтения (например, язык).
                         </p>
                     </div>
                     <div>
                         <p>
-                            Please note, though we have implemented our best security practices,
-                            no information transmission over the means of the Internet can be
-                            guaranteed as 100% safe.
+                            Файлы cookie не хранят вашу личную информацию, мы их используем
+                            исключительно для того, чтобы предоставить вам лучший возможный опыт просмотра и покупок.
+                            Вы всегда можете контролировать или отключать файлы cookie, перейдя в «Настройки» в
+                            ваш браузер. Обратите внимание, что в зависимости от файлов cookie, которые вы решите
+                            блокировать, некоторые функции или разделы simpletechmall.com могут работать некорректно.
+                        </p>
+                    </div>
+                    <div>
+                        <p>Информация, которой мы делимся</p>
+                        <p>
+                            Мы никогда не продаем информацию, которую нам предоставляют наши клиенты.
+                            Однако мы можем передавать вашу информацию сторонним компаниям.
+                            для выполнения заказа. К ним относятся платежные шлюзы и платежные
+                            переработчики, компании, обеспечивающие отгрузку заказанного товара и т.д.
+                            Мы также поделимся вашей информацией с официальными органами, если мы
+                            обязаны это сделать по закону.
+                        </p>
+                    </div>
+                    <div>
+                        <p>Информационная безопасность</p>
+                        <p>
+                            Мы прилагаем все усилия, чтобы защитить наш сайт и любые
+                            информация, которую мы храним от несанкционированного доступа или
+                            несанкционированное изменение, раскрытие или уничтожение.
+                            В частности:
+                        </p>
+                        <p>
+                            – мы проверяем сбор, хранение и
+                            методы обработки, включая меры физической безопасности,
+                            для защиты от несанкционированного доступа к системам.
+                        </p>
+                        <p>
+                            — мы ограничиваем доступ к личной информации контрагентам, сервисным
+                            поставщики и агенты, которым необходимо знать эту информацию для обработки
+                            это для нас, чтобы предоставить вам наши услуги.
                         </p>
                     </div>
                     <div>
                         <p>
-                            Changes
+                            Обратите внимание, хотя мы внедрили наши лучшие методы обеспечения безопасности,
+                            передача информации через Интернет невозможна
+                            гарантировано как 100% безопасный.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Изменения
                         </p>
                         <p>
-                            Our Privacy notice may change from time to time. We will post updates on
-                            any privacy changes on this page. We advise that you review this page
-                            periodically to be aware of such changes.
+                            Наше уведомление о конфиденциальности может время от времени меняться. Мы будем публиковать обновления на
+                            любые изменения конфиденциальности на этой странице. Мы советуем вам просмотреть эту страницу
+                            периодически быть в курсе таких изменений.
                         </p>
                     </div>
                     <hr />

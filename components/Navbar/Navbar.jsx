@@ -87,6 +87,21 @@ const Navbar = () => {
                                 <a>магазин</a>
                             </Link>
                         </li>
+                        <li>
+                            <Link href={"/terms"}>
+                                <a>Условия использования</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/privacy"}>
+                                <a>Конфиденциальность</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/delivery"}>
+                                <a>Политика доставки</a>
+                            </Link>
+                        </li>
                     </ul>
                     <div
                         className={styles.modal_close_position}

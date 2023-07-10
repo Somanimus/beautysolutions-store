@@ -19,108 +19,100 @@ const Terms = () => {
                 <h2>Условия использования</h2>
                 <div>
                     <div>
-                        <p>Agreement</p>
+                        <p>Соглашение</p>
                         <p>
-                            These terms of use form a distant agreement between you (the customer, user, client)
-                            and us (the site,  beautysolutions.com, owned by Evolution Company LLC).
-                            Your use of this site and every transaction made through  beautysolutions.com shall be
-                            governed by this agreement as described hereinafter.
+                            Настоящие условия использования образуют дистанционное соглашение между вами (покупателем, пользователем, клиентом)
+                            и нами (сайт beautysolutions.com, принадлежащий ОсОО «Бьюти Солюшнс»).
+                            Ваше использование этого сайта и каждая транзакция, совершенная через beautysolutions.com, должны
+                            регулироватся настоящим соглашением, как описано ниже.
                         </p>
                     </div>
                     <div>
-                        <p>Use of the site</p>
-                        <p>You are provided with access to this site in accordance with the conditions described herein.</p>
+                        <p>Использование сайта</p>
+                        <p>Вам предоставляется доступ к этому сайту в соответствии с условиями, описанными здесь.</p>
                     </div>
                     <div>
-                        <p>You warrant that:</p>
-                        <p>– you agree not to impersonate any other person or entity when accessing and using  beautysolutions.com</p>
+                        <p>Вы гарантируете, что:</p>
+                        <p>- вы соглашаетесь не выдавать себя за другое физическое или юридическое лицо при доступе и использовании beautysolutions.com</p>
                     </div>
                     <div>
-                        <p>We reserve the right to:</p>
+                        <p>Мы оставляем за собой право:</p>
                         <p>
-                            – modify or withdraw, temporarily or permanently, this site (or any part thereof) with or without notice to you and you confirm that we shall not be liable to you or any third party for any modification to or withdrawal of the site; and/or;
-                            – change the conditions from time to time without prior notice, and your continued use of this site (or any part thereof) following such change shall be deemed to be your acceptance of such change. If you do not agree to any change to the terms then you should immediately stop using the site.
+                            - изменять или удалять, временно или постоянно, этот сайт (или любую его часть) с уведомлением вас или без него, и вы подтверждаете, что мы не несем ответственности перед вами или какой-либо третьей стороной за любое изменение или удаление сайта; и/или;
+                            - время от времени изменять условия без предварительного уведомления, и ваше дальнейшее использование этого сайта (или любой его части) после такого изменения будет считаться вашим согласием с таким изменением. Если вы не согласны с какими-либо изменениями условий, вам следует немедленно прекратить использование сайта.
                         </p>
                     </div>
                     <div>
-                        <p>Order placement and acceptance</p>
+                        <p>Размещение и прием заказа</p>
                         <p>
-                            The order acknowledgement email and order number are not an order acceptance from us.
-                            Acceptance of your order and the completion of the contract between you and us will take
-                            place on payment for the order unless we have notified you that we do not accept your order
-                            or you have cancelled it yourself. To pay for your order you can use major credit, debit cards such
-                            as Visa and MasterCard. At the checkout, you can also apply your 10% discretion discount that can
-                            be used for any product available on our site. Once you paid for the order it is considered to
-                            be accepted and will go for despatch.
+                            Электронное письмо с подтверждением заказа и номер заказа не являются подтверждением принятия заказа от нас.
+                            Принятие вашего заказа и завершение договора между вами и нами займет
+                            поставить на оплату заказа, если мы не уведомили вас, что мы не принимаем ваш заказ
+                            или вы сами его отменили. Для оплаты вашего заказа вы можете использовать основные кредитные, дебетовые карты, такие как
+                            как Visa и MasterCard. При оформлении заказа вы также можете применить дискретную скидку 10%, которая может
+                            использоваться для любого продукта, доступного на нашем сайте. После того, как вы оплатили заказ, он считается
+                            будет принят и пойдет на отправку.
                         </p>
                     </div>
                     <div>
-                        <p>Availability and prices</p>
+                        <p>Наличие и цены</p>
                         <p>
-                            Goods represented on  beautysolutions.com are subject to availability.
-                            Our acceptance of your offer to purchase our products is subject to their availability.
-                            Our acknowledgement of your order via email is not a guarantee of delivery.
-                            If we are unable to deliver the goods which you have offered to purchase we will let you know as quickly as possible.
+                            Товары, представленные на сайте beautysolutions.com, предоставляются в зависимости от наличия.
+                            Принятие нами вашего предложения о покупке наших продуктов зависит от их наличия.
+                            Наше подтверждение вашего заказа по электронной почте не является гарантией доставки.
+                            Если мы не сможем доставить товар, который вы предложили приобрести, мы сообщим вам об этом как можно быстрее.
                         </p>
                     </div>
                     <div>
+                        <p>Описание продукта и информация</p>
                         <p>
-                            Goods represented on  beautysolutions.com are subject to availability.
-                            Our acceptance of your offer to purchase our products is subject to their availability.
-                            Our acknowledgement of your order via email is not a guarantee of delivery.
-                            If we are unable to deliver the goods which you have offered to purchase we will let you know as quickly as possible.
+                            Несмотря на то, что мы проявляем разумную заботу о том, чтобы все изображения,
+                            описания и другие сведения о продукте, представленные на сайте beautysolutions.com, верны
+                            В любом случае, информация на этом сайте может быть неточной на момент размещения заказа.
+                            Например, цвета и/или внешний вид наших продуктов могут незначительно отличаться от того,
+                            они появляются на экране, и мы не можем гарантировать, что экран вашего монитора будет точно отражать
+                            цвет товара при доставке.
                         </p>
                     </div>
                     <div>
-                        <p>Product description and information</p>
+                        <p>Заказ повторной отправки и возврата</p>
                         <p>
-                            Although we take reasonable care to ensure that all images,
-                            descriptions and other product details appearing on  beautysolutions.com are correct by
-                            all means, the information on this site may not be accurate at the moment you place an order.
-                            For example, the colours and/or appearance of our products may vary slightly from the way
-                            they appear on the screen and we cannot guarantee that your monitor screen will accurately reflect
-                            the colour of the product on delivery.
-                        </p>
-                    </div>
-                    <div>
-                        <p>Order reshipment and return</p>
-                        <p>
-                            If the product you ordered arrives damaged or defective,
-                            please contact our customer support by email or phone.
-                            Once we receive your request, we will ship a new product at our expense
-                            to the same or a new (if such provided) delivery address.
+                            Если заказанный вами товар прибыл поврежденным или дефектным,
+                            пожалуйста, свяжитесь с нашей службой поддержки клиентов по электронной почте или телефону.
+                            Как только мы получим ваш запрос, мы отправим новый продукт за наш счет
+                            на тот же или новый (если таковой указан) адрес доставки.
                         </p>
                     </div>
                     <div>
                         <p>
-                            If you wish to return the product, you can do so within 14 days after receiving your order.
-                            Please notify our customer support about your decision and we will give you all the necessary
-                            information on how to proceed with the product return. Note, the product must be returned in original packaging.
+                            Если вы хотите вернуть товар, вы можете сделать это в течение 14 дней после получения заказа.
+                            Пожалуйста, сообщите нашей службе поддержки клиентов о своем решении, и мы предоставим вам всю необходимую информацию.
+                            информацию о том, как поступить с возвратом товара. Обратите внимание, товар должен быть возвращен в оригинальной упаковке.
                         </p>
                     </div>
                     <div>
-                        <p>Refund policy</p>
+                        <p>Политика возврата</p>
                         <p>
-                            We offer a full refund for any purchase made through  beautysolutions.com.
-                            Please let us know if you are not satisfied with the product that you
-                            purchased from us and wish to return it. You are eligible for a full refund
-                            within 14 days after receiving your order. The refund will cover the price of
-                            the product itself and the shipping cost. Please note, it may take up to
-                            14 business days for the refund to get processed and appear on your bank account.
+                            Мы предлагаем полный возврат средств за любую покупку, сделанную через beautysolutions.com.
+                            Пожалуйста, сообщите нам, если вы не удовлетворены продуктом, который вы
+                            купили у нас и хотите вернуть. Вы имеете право на полный возврат
+                            в течение 14 дней после получения вашего заказа. Возврат покроет стоимость
+                            сам товар и стоимость доставки. Обратите внимание, это может занять до
+                            14 рабочих дней, прежде чем возврат будет обработан и появится на вашем банковском счете.
                         </p>
                     </div>
                     <div>
                         <p>
-                            If you have any additional questions about the refund procedure or would like to request a refund, contact our customer support.
+                            Если у вас есть какие-либо дополнительные вопросы о процедуре возврата или вы хотите запросить возврат средств, свяжитесь с нашей службой поддержки клиентов.
                         </p>
                     </div>
                     <div>
-                        <p>Customer support</p>
+                        <p>Служба поддержки</p>
                         <p>
-                            If you have any questions or concerns then please feel free to call or email us.
-                            We are always here and happy to help you any time, 24/7/365. We also accept
-                            written correspondence at the following address: Kyrgyzstan, Bishkek, Abdrahmanova str,
-                            170 bld. The satisfaction of our customers is our priority.
+                            Если у вас есть какие-либо вопросы или проблемы, пожалуйста, позвоните или напишите нам по электронной почте.
+                            Мы всегда здесь и рады помочь вам в любое время, 24/7/365. Мы также принимаем
+                            письменную корреспонденцию по адресу: г. Бишкек, ул. Нуркамал Жетикашкаевой 29.
+                            Удовлетворенность наших клиентов является нашим приоритетом.
                         </p>
                     </div>
                     <hr />
