@@ -4,8 +4,11 @@ import styles from "./Hero.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../redux/action/productsAction";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+    const {t} = useTranslation()
+
     const { searchValue, productsSearch } = useSelector(
         (state) => state.products
     );
@@ -20,15 +23,12 @@ const Hero = () => {
     const clickSearch = () => {
         dispatch(getProducts(false, false, false, state.replace(/ /gi, "+")));
     };
+    
     return (
         <div className="container">
             <section className={styles.hero}>
                 <div className={styles.hero_left}>
-                    <h1 className={styles.hero_h1}>Товары для красоты</h1>
-                    {/* <p>
-                        C помощью этого онлайн-генератора рыботекста можно
-                        пачками плодить как отдельные предложения и заголовки
-                    </p> */}
+                    <h1 className={styles.hero_h1}>{t('itemsForBeauty')}</h1>
                     <div className={styles.input_wrapper}>
                         <label className={styles.hero_input}>
                             <input
@@ -46,7 +46,7 @@ const Hero = () => {
                             </svg>
                         </label>
                         <div className={styles.hero_btn} onClick={clickSearch}>
-                            Найти
+                            {t('find')}
                         </div>
                         {state ? (
                             <div className={styles.modalInput}>
@@ -69,7 +69,7 @@ const Hero = () => {
                                         }
                                     )
                                 ) : (
-                                    <div>совпадений не найдено</div>
+                                    <div>{t('noMatchesFound')}</div>
                                 )}
                             </div>
                         ) : (

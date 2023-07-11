@@ -4,6 +4,7 @@ import Layout from "../../components/Layout/Layout";
 import { getGoodCredit } from '../../redux/action/goodCreaditAction';
 import { BestCard } from '../../components/Best/Best';
 import * as styles from "./goodCredit.module.css"
+import { useTranslation } from 'react-i18next';
 
 const GoodCredit = () => {
     const {goodCredit} = useSelector(state => state.goodCredit)
@@ -12,10 +13,13 @@ const GoodCredit = () => {
     useEffect(() => {
         dispatch(getGoodCredit())
     }, [dispatch])
+
+    const {t} = useTranslation()
+
     return (
         <Layout>
             <div className='container'>
-                <h2>Товары в кредит</h2>
+                <h2>{t('itemsInCredit')}</h2>
                 <div className={styles.best_card_wrapper}>
                     {
                         goodCredit?.results ? goodCredit?.results?.map((item, idx) => {
@@ -24,7 +28,7 @@ const GoodCredit = () => {
                                     <BestCard new_is={item ? item.is_new : false} content={item} />
                                 </div>
                             )
-                        }) : "покачто нету товаров в кредит"
+                        }) : t('noItemsInCredit')
                     }
                 </div>
             </div>

@@ -5,8 +5,11 @@ import Image from 'next/image';
 import {useDispatch, useSelector} from "react-redux";
 import {getCotegories} from "../../redux/action/categoriesAction";
 import Link from "next/link";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+    const {t} = useTranslation()
+
     const { categories } = useSelector(state => state.categories)
     const dispatch = useDispatch()
     useEffect(() => {
@@ -18,23 +21,23 @@ const Footer = () => {
                 <div>
                     <ul className={styles.footer_ul}>
                         <Link href={'/about'}>
-                        <a ><li>О нас</li></a>
+                        <a ><li>{t('footerAboutUs')}</li></a>
                         
                         </Link>
                         <Link href={"/goodCreadit"}>
-                            <a><li>Товары в кредит</li></a>
+                            <a><li>{t('itemsInCredit')}</li></a>
                         </Link>
                         <Link href={"/shares"}>
-                            <a><li>Акции</li></a>
+                            <a><li>{t('stock')}</li></a>
                         </Link>
                         <Link href={"/terms"}>
-                            <a><li>Условия использования</li></a>
+                            <a><li>{t('termsOfUse')}</li></a>
                         </Link>
                         <Link href={"/privacy"}>
-                            <a><li>Конфиденциальность</li></a>
+                            <a><li>{t('confidentiality')}</li></a>
                         </Link>
                         <Link href={"/delivery"}>
-                            <a><li>Политика доставки</li></a>
+                            <a><li>{t('shippingPolicy')}</li></a>
                         </Link>
                     </ul>
                 </div>
@@ -42,7 +45,7 @@ const Footer = () => {
                 <div>
                     <ul className={styles.footer_ul}>
                         <Link href={'/catalog'}>
-                        <a ><li>Каталог</li></a>
+                        <a ><li>{t('catalog')}</li></a>
                         
                         </Link>
  
@@ -88,8 +91,8 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.copyright}>
-                    {"Общество с Ограниченной Ответственностью (ОсОО) «Бьюти Солюшнс»"}
-                    {"Кыргызская Республика, город Бишкек, ул. Нуркамал Жетикашкаевой 29"}  
+                    {t('LLC')}
+                    {t('address')}
                 </div>
             </div>
         </footer>

@@ -12,6 +12,7 @@ import { BestCardCatalog } from "../../../../components/catalog/catalog";
 import styles from "./styles.module.css";
 import { getProducts } from "../../../../redux/action/productsAction";
 import { BestCard } from "../../../../components/Best/Best";
+import { useTranslation } from "react-i18next";
 
 const SubCategory = () => {
     const { subCategories, subCategoriesDetail } = useSelector(
@@ -31,6 +32,8 @@ const SubCategory = () => {
     useEffect(() => {
         dispatch(getSubCategories());
     }, [dispatch]);
+
+    const {t} = useTranslation()
 
     return (
         <Layout title="id">
@@ -72,7 +75,7 @@ const SubCategory = () => {
                 </div>
             </div>
             <div className="container">
-                <h3 className={styles.h3}>Все категорий</h3>
+                <h3 className={styles.h3}>{t('allCategory')}</h3>
                 <div className={styles.best_card_wrapper}>
                     {subCategories?.map((item) => (
                         <Link

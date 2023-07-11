@@ -1,15 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './Withus.module.css';
+import { useTranslation } from 'react-i18next';
 
 const Card = () => {
+    const {t} = useTranslation()
+
     return (
         <div className={styles.card}>
             <img src='https://static2.waybeauty.pl/pol_pm_APIS-MYSTIC-OUD-Nawilzajacy-zel-do-mycia-ciala-300-ml-14318_2.jpg'
             className={styles.card_image}
             />
             <div className={styles.card_flex}>
-                <h3>Выгодно</h3>
+                <h3>{t('Profitable')}</h3>
             </div>
             <div className={styles.card_info}>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dignissimos obcaecati ratione aspernatur molestiae beatae sint, voluptatibus perferendis exercitationem harum? Culpa at mollitia suscipit quas odio ex, ratione cumque dolorum.</p>
@@ -22,6 +25,8 @@ const Card = () => {
 };
 
 const Card2 = () => {
+    const {t} = useTranslation()
+
     return (
         <div className={styles.card}>
             <img
@@ -29,7 +34,7 @@ const Card2 = () => {
             className={styles.card_image}
             />
             <div className={styles.card_flex}>
-                <h3>Выгодно</h3>
+                <h3>{t('Profitable')}</h3>
             </div>
             <div className={styles.card_info}>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dignissimos obcaecati ratione aspernatur molestiae beatae sint, voluptatibus perferendis exercitationem harum? Culpa at mollitia suscipit quas odio ex, ratione cumque dolorum.</p>
@@ -42,6 +47,8 @@ const Card2 = () => {
 };
 
 const Card3 = () => {
+    const {t} = useTranslation()
+
     return (
         <div className={styles.card}>
             <img
@@ -49,7 +56,7 @@ const Card3 = () => {
             className={styles.card_image}
             />
             <div className={styles.card_flex}>
-                <h3>Выгодно</h3>
+                <h3>{t('Profitable')}</h3>
             </div>
             <div className={styles.card_info}>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dignissimos obcaecati ratione aspernatur molestiae beatae sint, voluptatibus perferendis exercitationem harum? Culpa at mollitia suscipit quas odio ex, ratione cumque dolorum.</p>
@@ -62,6 +69,8 @@ const Card3 = () => {
 };
 
 const Card4 = () => {
+    const {t} = useTranslation()
+
     return (
         <div className={styles.card}>
             <img
@@ -69,7 +78,7 @@ const Card4 = () => {
             className={styles.card_image}
             />
             <div className={styles.card_flex}>
-                <h3>Выгодно</h3>
+                <h3>{t('Profitable')}</h3>
             </div>
             <div className={styles.card_info}>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab dignissimos obcaecati ratione aspernatur molestiae beatae sint, voluptatibus perferendis exercitationem harum? Culpa at mollitia suscipit quas odio ex, ratione cumque dolorum.</p>
@@ -82,10 +91,12 @@ const Card4 = () => {
 };
 
 export default function WithUs() {
+    const {t} = useTranslation()
+
     return (
         <div className='gray_bg'>
             <div className="container">
-                <h2>С Нами</h2>
+                <h2>{t('withUs')}</h2>
                 <div className={styles.card_wrapper}>
                     <Card />
                     <Card2 />

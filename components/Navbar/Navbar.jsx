@@ -3,10 +3,26 @@ import styles from "./Navbar.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
+import useLocalStorage from "../../use-localstorage";
+import i18n from '../../i18n';
 
 const Navbar = () => {
     const { basket } = useSelector((state) => state.basket);
     const [modal, setModal] = useState(false);
+
+    const { t } = useTranslation()
+    const [language, setLanguage] = useLocalStorage('language', 'ru')
+
+    const handleLanguageChange = (lang) => {
+        if (lang === 'ru') {
+            i18n.changeLanguage('ru');
+            setLanguage('ru');
+        } else if (lang === 'en') {
+            i18n.changeLanguage('en');
+            setLanguage('en');
+        }
+    };
     return (
         <header className={` ${styles.header}`}>
             <nav className={`container ${styles.nav}`}>
@@ -22,17 +38,17 @@ const Navbar = () => {
 
                     <li>
                         <Link href="/about">
-                            <a>О нас</a>
+                            <a>{t('footerAboutUs')}</a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/catalog">
-                            <a>Каталог</a>
+                            <a>{t('catalog')}</a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/contacts">
-                            <a>Контакты</a>
+                            <a>{t('contacts')}</a>
                         </Link>
                     </li>
                 </ul>
@@ -57,6 +73,11 @@ const Navbar = () => {
                     </Link>
                 </div>
 
+                <div>
+                    <button onClick={() => handleLanguageChange('ru')}>{t('russia')}</button>
+                    <button onClick={() => handleLanguageChange('en')}>{t('english')}</button>
+                </div>
+
                 <div className={styles.burger} onClick={() => setModal(!modal)}>
                     <div className={styles.burger_content} />
                 </div>
@@ -69,37 +90,37 @@ const Navbar = () => {
 
                         <li>
                             <Link href="/about">
-                                <a>О нас</a>
+                                <a>{t('footerAboutUs')}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/catalog">
-                                <a>Каталог</a>
+                                <a>{t('catalog')}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/contacts">
-                                <a>Контакты</a>
+                                <a>{t('contacts')}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href="/cart">
-                                <a>магазин</a>
+                                <a>{t('shop')}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href={"/terms"}>
-                                <a>Условия использования</a>
+                                <a>{t('termsOfUse')}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href={"/privacy"}>
-                                <a>Конфиденциальность</a>
+                                <a>{t('confidentiality')}</a>
                             </Link>
                         </li>
                         <li>
                             <Link href={"/delivery"}>
-                                <a>Политика доставки</a>
+                                <a>{t('shippingPolicy')}</a>
                             </Link>
                         </li>
                     </ul>

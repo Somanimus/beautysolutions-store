@@ -6,8 +6,11 @@ import Link from "next/link";
 import Last from "../Last/Last";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../redux/action/productsAction";
+import { useTranslation } from "react-i18next";
 
 export const BestCardCatalog = ({ content }) => {
+    const {t} = useTranslation()
+
     return (
         <div className={styles.best_card}>
             <div className={styles.image_wrapper}>
@@ -25,12 +28,13 @@ export const BestCardCatalog = ({ content }) => {
             <div className={styles.best_center}>
                 <div className={styles.best_card_name}>{content.name}</div>
             </div>
-            <div className={styles.best_card_btn}>подробнее</div>
+            <div className={styles.best_card_btn}>{t('more')}</div>
         </div>
     );
 };
 
 const Catalog = ({ categories }) => {
+    const {t} = useTranslation()
     
     const { products, productsLastCount } = useSelector((state) => state.products)
     const dispatch = useDispatch()
@@ -44,7 +48,7 @@ const Catalog = ({ categories }) => {
     return (
         <div className="gray_bg">
             <div className="container">
-                <h2>Категории товаров</h2>
+                <h2>{t('itemCategory')}</h2>
                 <div className={styles.best_card_wrapper}>
                     {
                         categories.length ? categories.map((item, idx) => {
@@ -59,7 +63,7 @@ const Catalog = ({ categories }) => {
                                     </a>
                                 </Link>
                             );
-                        }) : "Пока что нуту видов мебели"
+                        }) : t('noSpecies')
                     }
                 </div>
             </div>
@@ -71,7 +75,7 @@ const Catalog = ({ categories }) => {
 //     return (
 //         <div className='gray_bg'>
 //             <div className={styles.best_container}>
-//                 <h2>Диван</h2>
+//                 <h2>{t('sofa')}</h2>
 //                 <div className={styles.best_card_wrapper}>
 //                     <Divan/>
 //                 </div>
@@ -86,7 +90,7 @@ export default Catalog;
 //     return (
 //         <section className={styles.catalog}>
 //             <div className={styles.catalog__container}>
-//                 <h1 className={styles.catalog__title}>Вид мебели</h1>
+//                 <h1 className={styles.catalog__title}>{t('typeOfFurniture')}</h1>
 
 //             </div>
 //         </section>

@@ -7,6 +7,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {productsLastCountSuccess, productsNewCount} from "../../redux/action/productsAction";
 import {addBasket, basketAction} from "../../redux/action/basketAction";
 import {BestCard} from "../Best/Best";
+import { useTranslation } from 'react-i18next';
 
 const New = () => {
     return <div className={styles.best_card_new}>Новый</div>;
@@ -52,6 +53,7 @@ const Hit = () => {
 // };
 
 const Last = ({product}) => {
+    const {t} = useTranslation()
     const { productsLastCount } = useSelector((state) => state.products)
     const dispatch = useDispatch()
 
@@ -62,7 +64,7 @@ const Last = ({product}) => {
     return (
         <div className='gray_bg'>
             <div className="container">
-                <h2 className='text-center'>Последние поступления</h2>
+                <h2 className='text-center'>{t('latestArrivals')}</h2>
                 <div className={styles.best_card_wrapper}>
                     {
                         product.results ? product.results.map((item, idx) => {
@@ -71,7 +73,7 @@ const Last = ({product}) => {
                                     <BestCard new_is={item.is_new} content={item} />
                                 </div>
                             )
-                        }) : "Сейчас товаров под данной категорией нет"
+                        }) : t('noGoodsInCategory')
                     }
 
                 </div>

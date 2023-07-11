@@ -6,13 +6,18 @@ import { addBasket, basketAction } from "../../redux/action/basketAction";
 import { useDispatch, useSelector } from "react-redux";
 import Link from "next/link";
 import Router, { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
 
 const New = () => {
-    return <div className={styles.best_card_new}>Новый</div>;
+    const {t} = useTranslation()
+
+    return <div className={styles.best_card_new}>{t('new')}</div>;
 };
 
 const Hit = () => {
-    return <div className={styles.best_card_hit}>Хит продаж</div>;
+    const {t} = useTranslation()
+
+    return <div className={styles.best_card_hit}>{t('bestseller')}</div>;
 };
 
 export const BestCard = ({
@@ -21,6 +26,8 @@ export const BestCard = ({
     count = 1,
     setCount = () => {},
 }) => {
+    const {t} = useTranslation()
+
     const [amount, setAmount] = useState(content.price.replace(/\..*/, ""));
     const { basket } = useSelector((state) => state.basket);
     const dispatch = useDispatch();
@@ -97,8 +104,8 @@ export const BestCard = ({
                             onClick={onClickButton}
                         >
                             {basket.indexOf(content.id) !== -1
-                                ? "Удалить из корзины"
-                                : "В корзину"}
+                                ? t('removeFromBasket')
+                                : t('inBasket')}
                         </div>
                     </div>
                 </div>
@@ -108,10 +115,12 @@ export const BestCard = ({
 };
 
 const Best = ({ productsHit }) => {
+    const {t} = useTranslation()
+
     return (
         <div className="gray_bg">
             <div className="container">
-                <h2 className="text-center">Лучшие товары</h2>
+                <h2 className="text-center">{t('bestGoods')}</h2>
                 <div className={styles.best_card_wrapper}>
                     {productsHit?.results?.length
                         ? productsHit?.results.map((item, idx) => {
@@ -124,7 +133,7 @@ const Best = ({ productsHit }) => {
                                   </div>
                               );
                           })
-                        : "Сейчас товаров под данной категорией нет"}
+                        : t('noGoodsInCategory')}
                 </div>
             </div>
             {productsHit.count > productsHit.count ? <LoadMore /> : ""}
