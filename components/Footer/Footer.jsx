@@ -1,14 +1,14 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import styles from './Footer.module.css';
-
-import Image from 'next/image';
-import {useDispatch, useSelector} from "react-redux";
-import {getCotegories} from "../../redux/action/categoriesAction";
+import visa from '../../public/visa.png';
+import { useDispatch, useSelector } from "react-redux";
+import { getCotegories } from "../../redux/action/categoriesAction";
 import Link from "next/link";
 import { useTranslation } from 'react-i18next';
+import Image from "next/image";
 
 const Footer = () => {
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
     const { categories } = useSelector(state => state.categories)
     const dispatch = useDispatch()
@@ -21,8 +21,8 @@ const Footer = () => {
                 <div>
                     <ul className={styles.footer_ul}>
                         <Link href={'/about'}>
-                        <a ><li>{t('footerAboutUs')}</li></a>
-                        
+                            <a ><li>{t('footerAboutUs')}</li></a>
+
                         </Link>
                         <Link href={"/goodCreadit"}>
                             <a><li>{t('itemsInCredit')}</li></a>
@@ -44,12 +44,12 @@ const Footer = () => {
 
                 <div>
                     <ul className={styles.footer_ul}>
-                        <Link href={'/catalog'}>
+                        {/* <Link href={'/catalog'}>
                         <a ><li>{t('catalog')}</li></a>
                         
-                        </Link>
- 
-                        {
+                        </Link> */}
+
+                        {/* {
                             categories?.map((item, idx) => (
                                 <Link key={item.id} href="/catalog/[id]" as={`/catalog/${item.id}`}>
                                     <a>
@@ -57,7 +57,7 @@ const Footer = () => {
                                     </a>
                                 </Link>
                             ))
-                        }
+                        } */}
                     </ul>
                 </div>
             </div>
@@ -91,8 +91,14 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.copyright}>
-                    {t('LLC')}
-                    {t('address')}
+                    <Image
+                        src={visa}
+                        alt="Описание изображения"
+                        width={80}
+                        height={30}
+                    />
+                    <p>{t('LLC')}</p>
+                    {/* <p>{t('address')}</p> */}
                 </div>
             </div>
         </footer>

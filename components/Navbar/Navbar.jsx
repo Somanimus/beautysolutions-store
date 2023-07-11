@@ -36,7 +36,7 @@ const Navbar = () => {
 
                 <ul className={styles.nav_list}>
 
-                    <li>
+                    {/* <li>
                         <Link href="/about">
                             <a>{t('footerAboutUs')}</a>
                         </Link>
@@ -50,7 +50,42 @@ const Navbar = () => {
                         <Link href="/contacts">
                             <a>{t('contacts')}</a>
                         </Link>
-                    </li>
+                    </li> */}
+                                            <li>
+                            <Link href="/about">
+                                <a>{t('footerAboutUs')}</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/catalog">
+                                <a>{t('catalog')}</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/contacts">
+                                <a>{t('contacts')}</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/cart">
+                                <a>{t('shop')}</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/terms"}>
+                                <a>{t('termsOfUse')}</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/privacy"}>
+                                <a>{t('confidentiality')}</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={"/delivery"}>
+                                <a>{t('shippingPolicy')}</a>
+                            </Link>
+                        </li>
                 </ul>
 
                 <div className={styles.basket_icon}>
@@ -73,9 +108,9 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div>
-                    <button onClick={() => handleLanguageChange('ru')}>{t('russia')}</button>
-                    <button onClick={() => handleLanguageChange('en')}>{t('english')}</button>
+                <div className={styles.languageBlock}>
+                    <button onClick={() => handleLanguageChange('ru')}>РУС</button>
+                    <button onClick={() => handleLanguageChange('en')}>EN</button>
                 </div>
 
                 <div className={styles.burger} onClick={() => setModal(!modal)}>
@@ -87,7 +122,6 @@ const Navbar = () => {
                     style={!modal ? { display: "none" } : {}}
                 >
                     <ul className={styles.list_mobile}>
-
                         <li>
                             <Link href="/about">
                                 <a>{t('footerAboutUs')}</a>

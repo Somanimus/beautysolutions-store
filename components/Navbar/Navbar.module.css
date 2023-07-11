@@ -34,7 +34,7 @@
     font-size: 14px;
     align-items: center;
     justify-content: space-between;
-    width: 455px;
+    width: 70%;
 }
 .basket_svg{
 }
@@ -90,7 +90,21 @@
 .burger_content::after{
     top: 7px;
 }
-@media (max-width: 1024px) {
+
+.languageBlock button {
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    background-color: inherit;
+    transition: 0.4s;
+}
+.languageBlock button:hover {
+    transition: 0.4s;
+    color: var(--dark-background);
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
     
     .nav_list {
         display: none;

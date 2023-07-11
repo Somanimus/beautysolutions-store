@@ -11,6 +11,8 @@
 }
 
 .copyright {
+    display: flex;
+    justify-content: space-between;
     margin-top: 60px;
     font-size: 12px;
 }
