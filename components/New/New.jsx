@@ -6,8 +6,11 @@ import LoadMore from "../LoadMore/LoadMore";
 import { productsNewCount } from "../../redux/action/productsAction";
 import { useDispatch, useSelector } from "react-redux";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const NewCard = ({ newContent }) => {
+  const {t} = useTranslation()
+
   return (
     <div className={styles.new_card}>
       <div className={styles.new_card_left}>
@@ -19,7 +22,7 @@ const NewCard = ({ newContent }) => {
         </div>
         <Link href={"/[id]"} as={`/${newContent.id}`}>
           <a>
-            <div className={styles.new_card_btn}>Подробнее</div>
+            <div className={styles.new_card_btn}>{t('more')}</div>
           </a>
         </Link>
       </div>
@@ -39,6 +42,7 @@ const NewCard = ({ newContent }) => {
 };
 
 const New = ({ productsNew }) => {
+  const {t} = useTranslation()
   const productsNewCountNew = useSelector(
     (state) => state.products.productsNewCount
   );
@@ -50,13 +54,13 @@ const New = ({ productsNew }) => {
   return (
     <div className="gray_bg">
       <div className="container">
-        <h2 className="text-center">Новинки</h2>
+        <h2 className="text-center">{t('news')}</h2>
         <div className={styles.new_card_wrapper}>
           {productsNew.results
             ? productsNew.results.map((item, idx) => (
                 <NewCard newContent={item} key={idx} />
               ))
-            : "Сейчас товаров под данной категорией нет"}
+            : t('noGoodsInCategory')}
         </div>
         {productsNew.count > productsNewCountNew ? (
           <LoadMore click={() => limitIncrement()} />

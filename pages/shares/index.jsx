@@ -4,6 +4,7 @@ import Layout from "../../components/Layout/Layout";
 import { getShares } from "../../redux/action/sharesAction";
 import { BestCard } from "../../components/Best/Best";
 import * as styles from "./shares.module.css"
+import { useTranslation } from "react-i18next";
 
 const Shares = () => {
     const {shares} = useSelector(state => state.shares)
@@ -11,10 +12,12 @@ const Shares = () => {
     useEffect(() => {
         dispatch(getShares())
     }, [dispatch])
+
+    const {t} = useTranslation()
     return (
         <Layout>
             <div className='container'>
-                <h2>Акций</h2>
+                <h2>{t('stock')}</h2>
                 <div className={styles.best_card_wrapper}>
                     {
                         shares?.results?.length ? shares?.results?.map((item, idx) => {
@@ -23,7 +26,7 @@ const Shares = () => {
                                     <BestCard new_is={item ? item.is_new : false} content={item} />
                                 </div>
                             )
-                        }) : "пока что нету товаров"
+                        }) : t('noItems')
                     }
                 </div>
             </div>

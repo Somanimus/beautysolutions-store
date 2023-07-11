@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import { addBasket, basketAction } from "../../redux/action/basketAction";
+import { useTranslation } from "react-i18next";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -28,6 +29,8 @@ function SamplePrevArrow(props) {
 }
 
 const ProductsDetail = ({ productsDetail }) => {
+    const {t} = useTranslation()
+
     const { basket } = useSelector((state) => state.basket);
     const dispatch = useDispatch();
 
@@ -77,10 +80,10 @@ const ProductsDetail = ({ productsDetail }) => {
                         )}
                     </div>
 
-                   <div style={{'marginBottom' : '1.5em'}}><strong>Описание:</strong> {productsDetail.description}</div>
+                   <div style={{'marginBottom' : '1.5em'}}><strong>{t('info')}:</strong> {productsDetail.description}</div>
                     <div className={styles.btn_card_price}>
                         <div className={styles.price}>
-                            <strong>Цена:</strong>{" "}
+                            <strong>{t('price')}:</strong>{" "}
                             <span
                                 className={
                                     productsDetail.sale ? styles.dis_price : ""
@@ -102,8 +105,8 @@ const ProductsDetail = ({ productsDetail }) => {
                             onClick={onClickButton}
                         >
                             {basket.indexOf(productsDetail.id) !== -1
-                                ? "Удалить из корзины"
-                                : "В корзину"}
+                                ? t('removeFromBasket')
+                                : t('inBasket')}
                         </div>
                     </div>
                 </div>

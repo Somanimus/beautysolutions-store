@@ -3,8 +3,11 @@ import styles from './Looked.module.css';
 
 import Image from 'next/image';
 import LoadMore from '../LoadMore/LoadMore';
+import { useTranslation } from 'react-i18next';
 
 const BestCard = (props) => {
+    const {t} = useTranslation()
+
     return (
         <div className={styles.best_card}>
             <div className={styles.image_wrapper}>
@@ -17,14 +20,13 @@ const BestCard = (props) => {
             </div>
             <div className={styles.line}></div>
             <div className={styles.best_center}>
-                <div className={styles.best_card_name}>Кресло Swoon</div>
+                <div className={styles.best_card_name}>{t('chairSwoon')}</div>
                 <div className={styles.best_card_descr}>
-                    Рыбатекст используется дизайнерами, проектировщиками и
-                    фронтендерами, когда нужно быстро заполнить макеты...
+                    {t('fishText')}
                 </div>
                 <div className={styles.best_card_price}>15 040 $</div>
             </div>
-            <div className={styles.best_card_btn}>В корзину</div>
+            <div className={styles.best_card_btn}>{t('inBasket')}</div>
         </div>
     );
 };
@@ -33,7 +35,7 @@ const Look = () => {
     return (
         <div className='gray_bg'>
             <div className={styles.best_container}>
-                <h2>Вы недавно смотрели</h2>
+                <h2>{t('youWatchingLater')}</h2>
                 <div className={styles.best_card_wrapper}>
                     <BestCard />
                     <BestCard />

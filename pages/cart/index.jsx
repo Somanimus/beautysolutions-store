@@ -7,6 +7,7 @@ import { API_URL } from "../../https";
 import { getProducts } from "../../redux/action/productsAction";
 import { basketAction, getLocalStorage } from "../../redux/action/basketAction";
 import styles from "./card.module.css";
+import { useTranslation } from "react-i18next";
 
 const f = {
     "email": "lev201611@gmail.com",
@@ -51,6 +52,8 @@ const Card = () => {
         }).then(res => console.log(res)).catch(err => console.log(err))
     } 
 
+    const {t} = useTranslation()
+
     return (
         <Layout title="Корзина">
             <div className={styles.basket + " container"}>
@@ -65,7 +68,7 @@ const Card = () => {
                             );
                         })
                 ) : (
-                    <h2>В корзине нечего нету</h2>
+                    <h2>{t('nothingInBasket')}</h2>
                 )}
             </div>
             <br />
@@ -75,7 +78,7 @@ const Card = () => {
                 <form onSubmit={formChange}>
                     <div>
                         <label>
-                            <span>Имя *</span>
+                            <span>{t('name')} *</span>
                             <input type="text" value={username}  onChange={ e=> setusername(e.target.value)}required name="full_name" />
                         </label>
                         <label>
@@ -83,7 +86,7 @@ const Card = () => {
                             <input value={email} type="email" required name="email"  onChange={e => setemail(e.target.value)}/>
                         </label>
                         <label>
-                            <span>Телефон *</span>
+                            <span>{t('phone')} *</span>
                             <input
                                 type="text"
                                 required
@@ -94,11 +97,11 @@ const Card = () => {
                             />
                         </label>
                         <label>
-                            <span>Адрес *</span>
+                            <span>{t('cardAdres')} *</span>
                             <input type="text" onChange={e=> setadress(e.target.value)} value={adress} required name="addres" />
                         </label>
                     </div>
-                    <button type="submit">заказать</button>
+                    <button type="submit">{t('order')}</button>
                 </form>
             </div>
         </Layout>
