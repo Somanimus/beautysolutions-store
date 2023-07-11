@@ -18,7 +18,7 @@ const Footer = () => {
     return (
         <footer>
             <div className={"container " + styles.footer}>
-                <div>
+                {/* <div>
                     <ul className={styles.footer_ul}>
                         <Link href={'/about'}>
                             <a ><li>{t('footerAboutUs')}</li></a>
@@ -40,7 +40,7 @@ const Footer = () => {
                             <a><li>{t('shippingPolicy')}</li></a>
                         </Link>
                     </ul>
-                </div>
+                </div> */}
 
                 <div>
                     <ul className={styles.footer_ul}>
@@ -63,7 +63,7 @@ const Footer = () => {
             </div>
 
             <div className={"container " + styles.footer_bottom}>
-                <div className={styles.footer_soc}>
+                {/* <div className={styles.footer_soc}>
                     <Image
                         src='/instagram.svg'
                         alt='instagram logo'
@@ -88,7 +88,7 @@ const Footer = () => {
                         width={24}
                         height={24}
                     />
-                </div>
+                </div> */}
 
                 <div className={styles.copyright}>
                     <Image
