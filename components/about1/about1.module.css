@@ -1,24 +1,9 @@
 .about__content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 100px;
-    grid-column-gap: 30px;
+    margin: 50px 0;
 }
 
-
-
-.about_left{
-    
-}
-.about_h1{
-}
-.about_p{
+.about_div {
     margin-top: 50px;
-}
-
-.dop_info{
-    margin-top: 20px;
-    margin-bottom: 100px;
 }
 
 @media (max-width: 992px) {
@@ -34,6 +19,5 @@
     .dop_info{
         margin-top: 20px;
         margin-bottom: 50px;
-    }
-    
+    }   
 }

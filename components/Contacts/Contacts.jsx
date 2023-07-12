@@ -3,7 +3,7 @@ import styles from "./Contacts.module.css";
 import { useTranslation } from "react-i18next";
 
 const Contacts = () => {
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
     return (
         <section className={"container "}>
@@ -16,12 +16,14 @@ const Contacts = () => {
             <div className={styles.contacts_right}>
                 <h1 className={styles.contacts_h1}></h1>
                 <p className={styles.contacts_p}>
-                    {t('mail')}:{" "}
-                    <a href=""></a>
+                    {t('mail')}: beautysolution863@gmail.com
+                </p>
+                <p className={styles.contacts_p}>
+                    {t('phone')}: +996706215309
                 </p>
             </div>
             <div className={styles.iframe}>
-           </div>
+            </div>
         </section>
     );
 };

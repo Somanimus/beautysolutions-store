@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from './Footer.module.css';
-import visa from '../../public/visa.png';
+import visa from '../../public/visa.svg';
+import mc from '../../public/mc.svg';
 import { useDispatch, useSelector } from "react-redux";
 import { getCotegories } from "../../redux/action/categoriesAction";
 import Link from "next/link";
@@ -91,12 +92,21 @@ const Footer = () => {
                 </div> */}
 
                 <div className={styles.copyright}>
+                    <span className={styles.logos}>
                     <Image
                         src={visa}
                         alt="Описание изображения"
                         width={80}
                         height={30}
                     />
+                    <Image
+                    className={styles.mc}
+                        src={mc}
+                        alt="Описание изображения"
+                        width={105}
+                        height={55}
+                    />
+                    </span>
                     <p>{t('LLC')}</p>
                     {/* <p>{t('address')}</p> */}
                 </div>

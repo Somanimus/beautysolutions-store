@@ -1,6 +1,13 @@
 {
+    "whoAreWe": "Who are we",
     "aboutUs": "About company",
-    "thisPageIsNull": "this page is currently empty",
+    "aboutUs1": "Innovation, functionality, and reliability are at the heart of every product we sell and we strive to ensure every range we offer reflects these values. Our aim is focused on three factors: our impact, our products, and our people.",
+    "aboutUs2": "Our impact",
+    "aboutUs3": "At simplytechmall.com we understand the day-to-day struggles everyone’s facing and we aim to make a change. Our site is the place where you can find any product you may ever need in your household and beyond.",
+    "aboutUs4": "Our products",
+    "aboutUs5": "At simplytechmall.com we have all kinds of gadgets that will make your everyday life easier and more fun. From smart alarm speakers and action cameras to vacuum cleaners and air purifiers – here you’ll find a variety of products for your home and unique gifts for your loved ones.",
+    "aboutUs6": "Our people",
+    "aboutUs7": "At simplytechmall.com we believe we have a responsibility to provide the best experience in every aspect. We are doing our utmost to make your shopping as smooth and simple as possible. With this purpose, we have onboard a professional team of customer support to help and guide you on your shopping journey on beautysolution863@gmail.com",
 
     "new": "new",
     "bestseller": "Bestseller",
@@ -20,7 +27,7 @@
     "info": "Description",
     "price": "Price",
 
-    "footerAboutUs": "About us",
+    "footerAboutUs": "Who we are",
     "itemsInCredit": "Goods on credit",
     "stock": "Stock",
     "termsOfUse": "Terms of Use",

@@ -11,9 +11,16 @@
 }
 
 .copyright {
+    margin-top: -10px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     font-size: 12px;
+}
+.logos {
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 1024px) {
